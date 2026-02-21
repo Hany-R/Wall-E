@@ -7,9 +7,9 @@
 void initMotors();
 void stop();
 void moveForward(int speed);
-void moveBackwars(int speed);
+void moveBackwards(int speed);
 void strafeLeft(int speed);
-void straferight(int speed);
+void strafeRight(int speed);
 void spinClockwise(int speed);
 void spinAnticlockwise(int speed);
 

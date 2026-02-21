@@ -27,7 +27,7 @@ void moveForward(int speed) {
     analogWrite(BR_FWD, speed); analogWrite(BR_BWD, 0);
 }
 
-void moveBackwars(int speed) {
+void moveBackwards(int speed) {
     analogWrite(FL_FWD, 0); analogWrite(FL_BWD, speed);
     analogWrite(FR_FWD, 0); analogWrite(FR_BWD, speed);
     analogWrite(BL_FWD, 0); analogWrite(BL_BWD, speed);
@@ -41,7 +41,7 @@ void strafeLeft(int speed) {
     analogWrite(BR_FWD, 0);     analogWrite(BR_BWD, speed);
 }
 
-void straferight(int speed) {
+void strafeRight(int speed) {
     analogWrite(FL_FWD, speed); analogWrite(FL_BWD, 0);
     analogWrite(FR_FWD, 0);     analogWrite(FR_BWD, speed);
     analogWrite(BL_FWD, 0);     analogWrite(BL_BWD, speed);
@@ -50,15 +50,15 @@ void straferight(int speed) {
 
 void spinClockwise(int speed) {
     analogWrite(FL_FWD, speed); analogWrite(FL_BWD, 0);
+    analogWrite(BL_FWD, speed); analogWrite(BL_BWD, 0);
     analogWrite(FR_FWD, 0);     analogWrite(FR_BWD, speed);
-    analogWrite(BL_FWD, 0);     analogWrite(BL_BWD, speed);
-    analogWrite(BR_FWD, speed); analogWrite(BR_BWD, 0);
+    analogWrite(BR_FWD, 0);     analogWrite(BR_BWD, speed)
 }
 
 void spinAnticlockwise(int speed) {
-    analogWrite(FL_FWD, speed); analogWrite(FL_BWD, 0);
-    analogWrite(FR_FWD, 0);     analogWrite(FR_BWD, speed);
+    analogWrite(FL_FWD, 0);     analogWrite(FL_BWD, speed);
     analogWrite(BL_FWD, 0);     analogWrite(BL_BWD, speed);
+    analogWrite(FR_FWD, speed); analogWrite(FR_BWD, 0);
     analogWrite(BR_FWD, speed); analogWrite(BR_BWD, 0);
 }
 
